@@ -25,9 +25,9 @@ const ProductDetail = () => {
             <img src={product?.img}/>
            </Col>
           <Col>
-            <span  className='detail-title'>{product?.title}</span>
-            <span className='detail-price'>#{product?.price}</span>
-            <div className='info'>
+            <span  className='detail-title' style={{textAlign:"center"}}>{product?.title}</span>
+            <span className='detail-price' style={{textAlign:"center"}}>#{product?.price}</span>
+            <div className='info' style={{justifyContent:"unset"}}>
               {product?.new == true ?  <span className='new'>NEW</span> : ""}
               {product?.choice == true?  <span className='best'>BEST</span> :  ""}
             </div>
